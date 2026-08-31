@@ -1,0 +1,31 @@
+module clock_free_tb;
+
+reg clk;
+wire clk_out;
+
+clock_free uut (
+    .clk(clk),
+    .clk_out(clk_out)
+);
+
+// Free-running clock
+always #5 clk = ~clk;
+
+initial begin
+    clk = 0;
+end
+
+initial begin
+    $dumpfile("clock_free.vcd");
+    $dumpvars(0, clock_free_tb);
+
+    #50;
+    $finish;
+end
+
+initial begin
+    $monitor("Time = %0t | clk = %b | clk_out = %b",
+             $time, clk, clk_out);
+end
+
+endmodule
