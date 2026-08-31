@@ -1,0 +1,217 @@
+$date
+	Mon Aug 31 09:30:06 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module dec3to8_tb $end
+$var wire 8 ! y [7:0] $end
+$var reg 3 " a [2:0] $end
+$var reg 1 # e $end
+$scope module uut $end
+$var wire 3 $ a [2:0] $end
+$var wire 1 # e $end
+$var wire 8 % y [7:0] $end
+$scope module lower_dec $end
+$var wire 1 & a $end
+$var wire 1 ' b $end
+$var wire 1 ( e $end
+$var wire 4 ) y [3:0] $end
+$var wire 2 * W [1:0] $end
+$scope module D0 $end
+$var wire 1 ( E $end
+$var wire 1 & S $end
+$var wire 2 + Y [1:0] $end
+$upscope $end
+$scope module D1 $end
+$var wire 1 , E $end
+$var wire 1 ' S $end
+$var wire 2 - Y [1:0] $end
+$upscope $end
+$scope module D2 $end
+$var wire 1 . E $end
+$var wire 1 ' S $end
+$var wire 2 / Y [1:0] $end
+$upscope $end
+$upscope $end
+$scope module upper_dec $end
+$var wire 1 0 a $end
+$var wire 1 1 b $end
+$var wire 1 2 e $end
+$var wire 4 3 y [3:0] $end
+$var wire 2 4 W [1:0] $end
+$scope module D0 $end
+$var wire 1 2 E $end
+$var wire 1 0 S $end
+$var wire 2 5 Y [1:0] $end
+$upscope $end
+$scope module D1 $end
+$var wire 1 6 E $end
+$var wire 1 1 S $end
+$var wire 2 7 Y [1:0] $end
+$upscope $end
+$scope module D2 $end
+$var wire 1 8 E $end
+$var wire 1 1 S $end
+$var wire 2 9 Y [1:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 9
+08
+b0 7
+06
+b0 5
+b0 4
+b0 3
+02
+01
+00
+b0 /
+0.
+b0 -
+0,
+b0 +
+b0 *
+b0 )
+0(
+0'
+0&
+b0 %
+b0 $
+0#
+b0 "
+b0 !
+$end
+#10
+b1 !
+b1 %
+b1 )
+b1 -
+1,
+b1 *
+b1 +
+1(
+1#
+#20
+b0 -
+0,
+b100 !
+b100 %
+b100 )
+b1 /
+1.
+b10 *
+b10 +
+1&
+10
+b1 "
+b1 $
+#30
+b10 -
+1,
+0.
+b1 *
+b1 +
+b10 !
+b10 %
+b10 )
+b0 /
+0&
+1'
+00
+11
+b10 "
+b10 $
+#40
+b0 -
+0,
+b1000 !
+b1000 %
+b1000 )
+b10 /
+1.
+b10 *
+b10 +
+1&
+10
+b11 "
+b11 $
+#50
+b0 -
+b1 3
+b1 7
+0,
+16
+0(
+0.
+b1 4
+b1 5
+b0 *
+b0 +
+b10000 !
+b10000 %
+b0 )
+b0 /
+12
+0&
+0'
+00
+01
+b100 "
+b100 $
+#60
+b0 7
+06
+b1000000 !
+b1000000 %
+b100 3
+b1 9
+18
+b10 4
+b10 5
+1&
+10
+b101 "
+b101 $
+#70
+b10 7
+16
+08
+b1 4
+b1 5
+b100000 !
+b100000 %
+b10 3
+b0 9
+0&
+1'
+00
+11
+b110 "
+b110 $
+#80
+b0 7
+06
+b10000000 !
+b10000000 %
+b1000 3
+b10 9
+18
+b10 4
+b10 5
+1&
+10
+b111 "
+b111 $
+#90
