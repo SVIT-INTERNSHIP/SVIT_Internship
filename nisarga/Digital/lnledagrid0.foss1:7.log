@@ -1,0 +1,406 @@
+27/08/26 03:41:33 Xvnc version TightVNC-1.3.10
+27/08/26 03:41:33 Copyright (C) 2000-2009 TightVNC Group
+27/08/26 03:41:33 Copyright (C) 1999 AT&T Laboratories Cambridge
+27/08/26 03:41:33 All Rights Reserved.
+27/08/26 03:41:33 See http://www.tightvnc.com/ for information on TightVNC
+27/08/26 03:41:33 Desktop name 'X' (lnledagrid0.foss1:7)
+27/08/26 03:41:33 Protocol versions supported: 3.3, 3.7, 3.8, 3.7t, 3.8t
+27/08/26 03:41:33 Listening for VNC connections on TCP port 5907
+xrdb: No such file or directory
+xrdb: can't open file '/home/nisarga/.Xresources'
+/usr/bin/startxfce4: X server already running on display :7
+gpg-agent: a gpg-agent is already running - not starting a new one
+
+(xfwm4:7590): xfwm4-WARNING **: 03:41:34.860: XSync extension too old (3.0).
+
+(xfwm4:7590): xfwm4-WARNING **: 03:41:34.860: The display does not support the XRender extension.
+
+(xfwm4:7590): xfwm4-WARNING **: 03:41:34.860: The display does not support the XRandr extension.
+
+(xfwm4:7590): xfwm4-WARNING **: 03:41:34.860: The display does not support the XRes extension.
+
+(xfwm4:7590): xfwm4-WARNING **: 03:41:34.861: The display does not support the XComposite extension.
+
+(xfwm4:7590): xfwm4-WARNING **: 03:41:34.861: The display does not support the XDamage extension.
+
+(xfwm4:7590): xfwm4-WARNING **: 03:41:34.861: The display does not support the XFixes extension.
+
+(xfwm4:7590): xfwm4-WARNING **: 03:41:34.861: The display does not support the XPresent extension.
+
+(xfwm4:7590): xfwm4-WARNING **: 03:41:34.861: Compositing manager disabled.
+xfwm4-Message: 03:41:34.906: Unsupported keyboard modifier '<Super>Tab'
+xfwm4-Message: 03:41:34.906: Unsupported keyboard modifier '<Super>KP_Down'
+xfwm4-Message: 03:41:34.906: Unsupported keyboard modifier '<Super>KP_Left'
+xfwm4-Message: 03:41:34.906: Unsupported keyboard modifier '<Super>KP_Right'
+xfwm4-Message: 03:41:34.906: Unsupported keyboard modifier '<Super>KP_Up'
+xfwm4-Message: 03:41:34.906: Unsupported keyboard modifier '<Super>KP_End'
+xfwm4-Message: 03:41:34.906: Unsupported keyboard modifier '<Super>KP_Next'
+xfwm4-Message: 03:41:34.906: Unsupported keyboard modifier '<Super>KP_Home'
+xfwm4-Message: 03:41:34.906: Unsupported keyboard modifier '<Super>KP_Page_Up'
+
+(xfwm4:7590): xfwm4-WARNING **: 03:41:34.923: Cannot find visual format on screen 0
+
+(xfwm4:7590): GLib-CRITICAL **: 03:41:34.923: g_hash_table_destroy: assertion 'hash_table != NULL' failed
+
+(xfsettingsd:7595): xfsettingsd-CRITICAL **: 03:41:34.964: No RANDR extension found in display :7. Display settings won't be applied.
+Xlib:  extension "XInputExtension" missing on display ":7".
+
+(xfsettingsd:7595): xfsettingsd-CRITICAL **: 03:41:34.964: XI is not present.
+
+(xfsettingsd:7595): xfsettingsd-CRITICAL **: 03:41:34.964: Failed to initialize the Xkb extension.
+
+(xfsettingsd:7595): xfsettingsd-CRITICAL **: 03:41:34.965: Failed to initialize the Accessibility extension.
+
+(xfsettingsd:7595): GLib-CRITICAL **: 03:41:34.974: g_hash_table_destroy: assertion 'hash_table != NULL' failed
+
+(xfsettingsd:7595): GLib-GObject-CRITICAL **: 03:41:34.974: Custom constructor for class XklEngine returned NULL (which is invalid). Please use GInitable instead.
+
+(xfsettingsd:7595): xfsettingsd-WARNING **: 03:41:34.974: Failed to get Xkl engine for display
+xfwm4-Message: 03:41:35.063: Unsupported keyboard modifier '<Super>Tab'
+xfwm4-Message: 03:41:35.063: Unsupported keyboard modifier '<Super>KP_Down'
+xfwm4-Message: 03:41:35.063: Unsupported keyboard modifier '<Super>KP_Left'
+xfwm4-Message: 03:41:35.063: Unsupported keyboard modifier '<Super>KP_Right'
+xfwm4-Message: 03:41:35.063: Unsupported keyboard modifier '<Super>KP_Up'
+xfwm4-Message: 03:41:35.063: Unsupported keyboard modifier '<Super>KP_End'
+xfwm4-Message: 03:41:35.063: Unsupported keyboard modifier '<Super>KP_Next'
+xfwm4-Message: 03:41:35.063: Unsupported keyboard modifier '<Super>KP_Home'
+xfwm4-Message: 03:41:35.063: Unsupported keyboard modifier '<Super>KP_Page_Up'
+Failure: No such entity
+
+** (xiccd:7621): CRITICAL **: 03:41:35.531: RandR extension is not working on display :7.0
+
+** (light-locker:7620): ERROR **: 03:41:35.609: Environment variable XDG_SESSION_PATH not set. Is LightDM running?
+
+(polkit-gnome-authentication-agent-1:7637): GLib-CRITICAL **: 03:41:35.687: g_variant_new_string: assertion 'string != NULL' failed
+
+(polkit-gnome-authentication-agent-1:7637): polkit-gnome-1-WARNING **: 03:41:35.688: Failed to register client: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
+Process already running (98:Address already in use). Exiting.
+
+** (wrapper-2.0:7714): WARNING **: 03:41:37.293: Binding 'XF86AudioLowerVolume' failed!
+
+** (wrapper-2.0:7714): WARNING **: 03:41:37.293: Binding 'XF86AudioRaiseVolume' failed!
+
+** (wrapper-2.0:7714): WARNING **: 03:41:37.293: Binding 'XF86AudioMute' failed!
+
+** (wrapper-2.0:7714): WARNING **: 03:41:37.293: Binding 'XF86AudioMicMute' failed!
+
+(wrapper-2.0:7714): pulseaudio-plugin-WARNING **: 03:41:37.293: Could not have grabbed volume control keys. Is another volume control application (xfce4-volumed) running?
+
+** (wrapper-2.0:7714): WARNING **: 03:41:37.293: Binding 'XF86AudioPlay' failed!
+
+** (wrapper-2.0:7714): WARNING **: 03:41:37.293: Binding 'XF86AudioStop' failed!
+
+** (wrapper-2.0:7714): WARNING **: 03:41:37.293: Binding 'XF86AudioPrev' failed!
+
+** (wrapper-2.0:7714): WARNING **: 03:41:37.293: Binding 'XF86AudioNext' failed!
+
+(wrapper-2.0:7714): pulseaudio-plugin-WARNING **: 03:41:37.293: Could not have grabbed multimedia control keys.
+
+27/08/26 03:42:25 Got connection from client 127.0.0.1
+27/08/26 03:42:25 Using protocol version 3.8
+27/08/26 03:42:25 Enabling TightVNC protocol extensions
+27/08/26 03:42:28 Full-control authentication passed by 127.0.0.1
+27/08/26 03:42:28 Using tight encoding for client 127.0.0.1
+27/08/26 03:42:28 rfbProcessClientNormalMessage: ignoring unknown encoding 16
+27/08/26 03:42:28 Using image quality level 6 for client 127.0.0.1
+27/08/26 03:42:28 rfbProcessClientNormalMessage: ignoring unknown encoding -223
+27/08/26 03:42:28 Enabling LastRect protocol extension for client 127.0.0.1
+27/08/26 03:42:28 Enabling cursor position updates for client 127.0.0.1
+27/08/26 03:42:28 Enabling full-color cursor updates for client 127.0.0.1
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 03:42:35.630: GFileInfo created without standard::size
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 03:42:35.630: file ../../../gio/gfileinfo.c: line 1845 (g_file_info_get_size): should not be reached
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 03:42:56.710: GFileInfo created without standard::size
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 03:42:56.710: file ../../../gio/gfileinfo.c: line 1845 (g_file_info_get_size): should not be reached
+27/08/26 03:54:14 Client 127.0.0.1 gone
+27/08/26 03:54:14 Statistics:
+27/08/26 03:54:14   key events received 58, pointer events 3598
+27/08/26 03:54:14   framebuffer updates 450, rectangles 4041, bytes 3502054
+27/08/26 03:54:14     LastRect markers 330, bytes 3960
+27/08/26 03:54:14     cursor shape updates 36, bytes 47150
+27/08/26 03:54:14     cursor position updates 1, bytes 12
+27/08/26 03:54:14     copyRect rectangles 95, bytes 1520
+27/08/26 03:54:14     tight rectangles 3579, bytes 3449412
+27/08/26 03:54:14   raw bytes equivalent 145132200, compression ratio 42.074475
+
+27/08/26 04:09:42 Got connection from client 127.0.0.1
+27/08/26 04:09:42 Using protocol version 3.8
+27/08/26 04:09:42 Enabling TightVNC protocol extensions
+27/08/26 04:09:45 Full-control authentication passed by 127.0.0.1
+27/08/26 04:09:46 Using tight encoding for client 127.0.0.1
+27/08/26 04:09:46 rfbProcessClientNormalMessage: ignoring unknown encoding 16
+27/08/26 04:09:46 Using image quality level 6 for client 127.0.0.1
+27/08/26 04:09:46 rfbProcessClientNormalMessage: ignoring unknown encoding -223
+27/08/26 04:09:46 Enabling LastRect protocol extension for client 127.0.0.1
+27/08/26 04:09:46 Enabling cursor position updates for client 127.0.0.1
+27/08/26 04:09:46 Enabling full-color cursor updates for client 127.0.0.1
+27/08/26 04:28:06 KbdAddEvent: unknown KeySym 0xff61 - allocating KeyCode 89
+xfwm4-Message: 04:28:06.757: Unsupported keyboard modifier '<Super>Tab'
+xfwm4-Message: 04:28:06.757: Unsupported keyboard modifier '<Super>KP_Down'
+xfwm4-Message: 04:28:06.757: Unsupported keyboard modifier '<Super>KP_Left'
+xfwm4-Message: 04:28:06.757: Unsupported keyboard modifier '<Super>KP_Right'
+xfwm4-Message: 04:28:06.757: Unsupported keyboard modifier '<Super>KP_Up'
+xfwm4-Message: 04:28:06.757: Unsupported keyboard modifier '<Super>KP_End'
+xfwm4-Message: 04:28:06.757: Unsupported keyboard modifier '<Super>KP_Next'
+xfwm4-Message: 04:28:06.757: Unsupported keyboard modifier '<Super>KP_Home'
+xfwm4-Message: 04:28:06.757: Unsupported keyboard modifier '<Super>KP_Page_Up'
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 04:55:34.955: GFileInfo created without standard::size
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 04:55:34.955: file ../../../gio/gfileinfo.c: line 1845 (g_file_info_get_size): should not be reached
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 04:56:27.128: GFileInfo created without standard::size
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 04:56:27.128: file ../../../gio/gfileinfo.c: line 1845 (g_file_info_get_size): should not be reached
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 04:57:56.451: GFileInfo created without standard::size
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 04:57:56.451: file ../../../gio/gfileinfo.c: line 1845 (g_file_info_get_size): should not be reached
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 04:57:56.456: GFileInfo created without standard::size
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 04:57:56.456: file ../../../gio/gfileinfo.c: line 1845 (g_file_info_get_size): should not be reached
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 04:57:56.460: GFileInfo created without standard::size
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 04:57:56.460: file ../../../gio/gfileinfo.c: line 1845 (g_file_info_get_size): should not be reached
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 04:57:56.462: GFileInfo created without standard::size
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 04:57:56.462: file ../../../gio/gfileinfo.c: line 1845 (g_file_info_get_size): should not be reached
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 04:58:10.133: GFileInfo created without standard::size
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 04:58:10.133: file ../../../gio/gfileinfo.c: line 1845 (g_file_info_get_size): should not be reached
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 04:58:10.149: GFileInfo created without standard::size
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 04:58:10.149: file ../../../gio/gfileinfo.c: line 1845 (g_file_info_get_size): should not be reached
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 04:58:13.066: GFileInfo created without standard::size
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 04:58:13.066: file ../../../gio/gfileinfo.c: line 1845 (g_file_info_get_size): should not be reached
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 04:58:13.350: GFileInfo created without standard::size
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 04:58:13.350: file ../../../gio/gfileinfo.c: line 1845 (g_file_info_get_size): should not be reached
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 04:58:13.602: GFileInfo created without standard::size
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 04:58:13.602: file ../../../gio/gfileinfo.c: line 1845 (g_file_info_get_size): should not be reached
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 04:58:28.246: GFileInfo created without standard::size
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 04:58:28.246: file ../../../gio/gfileinfo.c: line 1845 (g_file_info_get_size): should not be reached
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 04:58:29.392: GFileInfo created without standard::size
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 04:58:29.392: file ../../../gio/gfileinfo.c: line 1845 (g_file_info_get_size): should not be reached
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 04:58:29.417: GFileInfo created without standard::size
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 04:58:29.417: file ../../../gio/gfileinfo.c: line 1845 (g_file_info_get_size): should not be reached
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 04:58:36.694: GFileInfo created without standard::size
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 04:58:36.694: file ../../../gio/gfileinfo.c: line 1845 (g_file_info_get_size): should not be reached
+27/08/26 04:59:31 KbdAddEvent: unknown KeySym 0xffad - allocating KeyCode 90
+xfwm4-Message: 04:59:31.769: Unsupported keyboard modifier '<Super>Tab'
+xfwm4-Message: 04:59:31.769: Unsupported keyboard modifier '<Super>KP_Down'
+xfwm4-Message: 04:59:31.769: Unsupported keyboard modifier '<Super>KP_Left'
+xfwm4-Message: 04:59:31.769: Unsupported keyboard modifier '<Super>KP_Right'
+xfwm4-Message: 04:59:31.769: Unsupported keyboard modifier '<Super>KP_Up'
+xfwm4-Message: 04:59:31.769: Unsupported keyboard modifier '<Super>KP_End'
+xfwm4-Message: 04:59:31.769: Unsupported keyboard modifier '<Super>KP_Next'
+xfwm4-Message: 04:59:31.769: Unsupported keyboard modifier '<Super>KP_Home'
+xfwm4-Message: 04:59:31.769: Unsupported keyboard modifier '<Super>KP_Page_Up'
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 05:04:03.482: GFileInfo created without standard::size
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 05:04:03.483: file ../../../gio/gfileinfo.c: line 1845 (g_file_info_get_size): should not be reached
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 05:04:03.782: GFileInfo created without standard::size
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 05:04:03.782: file ../../../gio/gfileinfo.c: line 1845 (g_file_info_get_size): should not be reached
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 05:04:04.128: GFileInfo created without standard::size
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 05:04:04.128: file ../../../gio/gfileinfo.c: line 1845 (g_file_info_get_size): should not be reached
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 05:04:49.180: GFileInfo created without standard::size
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 05:04:49.180: file ../../../gio/gfileinfo.c: line 1845 (g_file_info_get_size): should not be reached
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 05:04:49.464: GFileInfo created without standard::size
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 05:04:49.464: file ../../../gio/gfileinfo.c: line 1845 (g_file_info_get_size): should not be reached
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 05:04:49.717: GFileInfo created without standard::size
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 05:04:49.717: file ../../../gio/gfileinfo.c: line 1845 (g_file_info_get_size): should not be reached
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 05:04:51.470: GFileInfo created without standard::size
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 05:04:51.470: file ../../../gio/gfileinfo.c: line 1845 (g_file_info_get_size): should not be reached
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 05:04:51.483: GFileInfo created without standard::size
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 05:04:51.483: file ../../../gio/gfileinfo.c: line 1845 (g_file_info_get_size): should not be reached
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 05:10:24.363: GFileInfo created without standard::size
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 05:10:24.363: file ../../../gio/gfileinfo.c: line 1845 (g_file_info_get_size): should not be reached
+# Error constructing proxy for org.gnome.Terminal:/org/gnome/Terminal/Factory0: Error calling StartServiceByName for org.gnome.Terminal: Timeout was reached
+# Error constructing proxy for org.gnome.Terminal:/org/gnome/Terminal/Factory0: Error calling StartServiceByName for org.gnome.Terminal: Timeout was reached
+# Error constructing proxy for org.gnome.Terminal:/org/gnome/Terminal/Factory0: Error calling StartServiceByName for org.gnome.Terminal: Timeout was reached
+# Error constructing proxy for org.gnome.Terminal:/org/gnome/Terminal/Factory0: Error calling StartServiceByName for org.gnome.Terminal: Timeout was reached
+# Error constructing proxy for org.gnome.Terminal:/org/gnome/Terminal/Factory0: Error calling StartServiceByName for org.gnome.Terminal: Timeout was reached
+# Error constructing proxy for org.gnome.Terminal:/org/gnome/Terminal/Factory0: Error calling StartServiceByName for org.gnome.Terminal: Timeout was reached
+27/08/26 05:12:39 Client 127.0.0.1 gone
+27/08/26 05:12:39 Statistics:
+27/08/26 05:12:39   key events received 2504, pointer events 33802
+27/08/26 05:12:39   framebuffer updates 6820, rectangles 63932, bytes 45259708
+27/08/26 05:12:39     LastRect markers 3810, bytes 45720
+27/08/26 05:12:39     cursor shape updates 750, bytes 943000
+27/08/26 05:12:39     cursor position updates 1, bytes 12
+27/08/26 05:12:39     copyRect rectangles 405, bytes 6480
+27/08/26 05:12:39     tight rectangles 58966, bytes 44264496
+27/08/26 05:12:39   raw bytes equivalent -1825892272, compression ratio -41.249589
+
+27/08/26 05:13:00 Got connection from client 127.0.0.1
+27/08/26 05:13:00 Using protocol version 3.8
+27/08/26 05:13:00 Enabling TightVNC protocol extensions
+27/08/26 05:13:04 rfbVncAuthProcessResponse: could not get password from /home/nisarga/.vnc/passwd
+27/08/26 05:13:04 Client 127.0.0.1 gone
+27/08/26 05:13:04 Statistics:
+27/08/26 05:13:04   framebuffer updates 0, rectangles 0, bytes 0
+
+27/08/26 05:14:56 Got connection from client 127.0.0.1
+27/08/26 05:14:56 Using protocol version 3.8
+27/08/26 05:14:56 Enabling TightVNC protocol extensions
+27/08/26 05:14:59 Full-control authentication passed by 127.0.0.1
+27/08/26 05:14:59 Using tight encoding for client 127.0.0.1
+27/08/26 05:14:59 rfbProcessClientNormalMessage: ignoring unknown encoding 16
+27/08/26 05:14:59 Using image quality level 6 for client 127.0.0.1
+27/08/26 05:14:59 rfbProcessClientNormalMessage: ignoring unknown encoding -223
+27/08/26 05:14:59 Enabling LastRect protocol extension for client 127.0.0.1
+27/08/26 05:14:59 Enabling cursor position updates for client 127.0.0.1
+27/08/26 05:14:59 Enabling full-color cursor updates for client 127.0.0.1
+27/08/26 05:28:43 KbdAddEvent: unknown KeySym 0xff63 - allocating KeyCode 91
+xfwm4-Message: 05:28:43.555: Unsupported keyboard modifier '<Super>Tab'
+xfwm4-Message: 05:28:43.555: Unsupported keyboard modifier '<Super>KP_Down'
+xfwm4-Message: 05:28:43.555: Unsupported keyboard modifier '<Super>KP_Left'
+xfwm4-Message: 05:28:43.555: Unsupported keyboard modifier '<Super>KP_Right'
+xfwm4-Message: 05:28:43.555: Unsupported keyboard modifier '<Super>KP_Up'
+xfwm4-Message: 05:28:43.555: Unsupported keyboard modifier '<Super>KP_End'
+xfwm4-Message: 05:28:43.555: Unsupported keyboard modifier '<Super>KP_Next'
+xfwm4-Message: 05:28:43.555: Unsupported keyboard modifier '<Super>KP_Home'
+xfwm4-Message: 05:28:43.555: Unsupported keyboard modifier '<Super>KP_Page_Up'
+27/08/26 05:34:32 Client 127.0.0.1 gone
+27/08/26 05:34:32 Statistics:
+27/08/26 05:34:32   key events received 158, pointer events 5742
+27/08/26 05:34:32   framebuffer updates 869, rectangles 7276, bytes 5021333
+27/08/26 05:34:32     LastRect markers 691, bytes 8292
+27/08/26 05:34:32     cursor shape updates 81, bytes 114142
+27/08/26 05:34:32     cursor position updates 1, bytes 12
+27/08/26 05:34:32     copyRect rectangles 238, bytes 3808
+27/08/26 05:34:32     tight rectangles 6265, bytes 4895079
+27/08/26 05:34:32   raw bytes equivalent 193997332, compression ratio 39.631093
+
+27/08/26 05:43:58 Got connection from client 127.0.0.1
+27/08/26 05:43:58 Using protocol version 3.8
+27/08/26 05:43:58 Enabling TightVNC protocol extensions
+27/08/26 05:44:01 Full-control authentication passed by 127.0.0.1
+27/08/26 05:44:01 Using tight encoding for client 127.0.0.1
+27/08/26 05:44:01 rfbProcessClientNormalMessage: ignoring unknown encoding 16
+27/08/26 05:44:01 Using image quality level 6 for client 127.0.0.1
+27/08/26 05:44:01 rfbProcessClientNormalMessage: ignoring unknown encoding -223
+27/08/26 05:44:01 Enabling LastRect protocol extension for client 127.0.0.1
+27/08/26 05:44:01 Enabling cursor position updates for client 127.0.0.1
+27/08/26 05:44:01 Enabling full-color cursor updates for client 127.0.0.1
+27/08/26 07:00:11 Client 127.0.0.1 gone
+27/08/26 07:00:11 Statistics:
+27/08/26 07:00:11   key events received 1126, pointer events 10376
+27/08/26 07:00:11   framebuffer updates 1339, rectangles 15611, bytes 12231133
+27/08/26 07:00:11     LastRect markers 889, bytes 10668
+27/08/26 07:00:11     cursor shape updates 249, bytes 322292
+27/08/26 07:00:11     cursor position updates 1, bytes 12
+27/08/26 07:00:11     copyRect rectangles 524, bytes 8384
+27/08/26 07:00:11     tight rectangles 13948, bytes 11889777
+27/08/26 07:00:11   raw bytes equivalent 768438264, compression ratio 64.630166
+
+27/08/26 07:33:29 Got connection from client 127.0.0.1
+27/08/26 07:33:29 Using protocol version 3.8
+27/08/26 07:33:29 Enabling TightVNC protocol extensions
+27/08/26 07:33:32 Full-control authentication passed by 127.0.0.1
+27/08/26 07:33:32 Using tight encoding for client 127.0.0.1
+27/08/26 07:33:32 rfbProcessClientNormalMessage: ignoring unknown encoding 16
+27/08/26 07:33:32 Using image quality level 6 for client 127.0.0.1
+27/08/26 07:33:32 rfbProcessClientNormalMessage: ignoring unknown encoding -223
+27/08/26 07:33:32 Enabling LastRect protocol extension for client 127.0.0.1
+27/08/26 07:33:32 Enabling cursor position updates for client 127.0.0.1
+27/08/26 07:33:32 Enabling full-color cursor updates for client 127.0.0.1
+27/08/26 07:36:40 Client 127.0.0.1 gone
+27/08/26 07:36:40 Statistics:
+27/08/26 07:36:40   key events received 0, pointer events 328
+27/08/26 07:36:40   framebuffer updates 12, rectangles 58, bytes 260563
+27/08/26 07:36:40     LastRect markers 8, bytes 96
+27/08/26 07:36:40     cursor shape updates 1, bytes 684
+27/08/26 07:36:40     cursor position updates 1, bytes 12
+27/08/26 07:36:40     tight rectangles 48, bytes 259771
+27/08/26 07:36:40   raw bytes equivalent 6273504, compression ratio 24.150132
+
+27/08/26 08:28:48 Got connection from client 127.0.0.1
+27/08/26 08:28:48 Using protocol version 3.8
+27/08/26 08:28:48 Enabling TightVNC protocol extensions
+27/08/26 08:28:52 Full-control authentication passed by 127.0.0.1
+27/08/26 08:28:52 Using tight encoding for client 127.0.0.1
+27/08/26 08:28:52 rfbProcessClientNormalMessage: ignoring unknown encoding 16
+27/08/26 08:28:52 Using image quality level 6 for client 127.0.0.1
+27/08/26 08:28:52 rfbProcessClientNormalMessage: ignoring unknown encoding -223
+27/08/26 08:28:52 Enabling LastRect protocol extension for client 127.0.0.1
+27/08/26 08:28:52 Enabling cursor position updates for client 127.0.0.1
+27/08/26 08:28:52 Enabling full-color cursor updates for client 127.0.0.1
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 09:26:14.779: GFileInfo created without standard::size
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 09:26:14.779: file ../../../gio/gfileinfo.c: line 1845 (g_file_info_get_size): should not be reached
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 10:13:03.196: GFileInfo created without standard::size
+
+(Thunar:7604): GLib-GIO-CRITICAL **: 10:13:03.196: file ../../../gio/gfileinfo.c: line 1845 (g_file_info_get_size): should not be reached
+27/08/26 10:40:14 Client 127.0.0.1 gone
+27/08/26 10:40:14 Statistics:
+27/08/26 10:40:14   key events received 6950, pointer events 28882
+27/08/26 10:40:14   framebuffer updates 9122, rectangles 131233, bytes 83469539
+27/08/26 10:40:14     LastRect markers 7720, bytes 92640
+27/08/26 10:40:14     cursor shape updates 399, bytes 528450
+27/08/26 10:40:14     cursor position updates 3, bytes 36
+27/08/26 10:40:14     copyRect rectangles 399, bytes 6384
+27/08/26 10:40:14     tight rectangles 122712, bytes 82842029
+27/08/26 10:40:14   raw bytes equivalent -647173132, compression ratio -7.812135
+
+27/08/26 10:55:54 Got connection from client 127.0.0.1
+27/08/26 10:55:54 Using protocol version 3.8
+27/08/26 10:55:54 Enabling TightVNC protocol extensions
+27/08/26 10:55:58 Full-control authentication passed by 127.0.0.1
+27/08/26 10:55:58 Using tight encoding for client 127.0.0.1
+27/08/26 10:55:58 rfbProcessClientNormalMessage: ignoring unknown encoding 16
+27/08/26 10:55:58 Using image quality level 6 for client 127.0.0.1
+27/08/26 10:55:58 rfbProcessClientNormalMessage: ignoring unknown encoding -223
+27/08/26 10:55:58 Enabling LastRect protocol extension for client 127.0.0.1
+27/08/26 10:55:58 Enabling cursor position updates for client 127.0.0.1
+27/08/26 10:55:58 Enabling full-color cursor updates for client 127.0.0.1
+27/08/26 11:00:26 Client 127.0.0.1 gone
+27/08/26 11:00:26 Statistics:
+27/08/26 11:00:26   key events received 491, pointer events 3001
+27/08/26 11:00:26   framebuffer updates 660, rectangles 9625, bytes 9118453
+27/08/26 11:00:26     LastRect markers 401, bytes 4812
+27/08/26 11:00:26     cursor shape updates 42, bytes 54148
+27/08/26 11:00:26     cursor position updates 1, bytes 12
+27/08/26 11:00:26     copyRect rectangles 7, bytes 112
+27/08/26 11:00:26     tight rectangles 9174, bytes 9059369
+27/08/26 11:00:26   raw bytes equivalent 386546044, compression ratio 42.668098

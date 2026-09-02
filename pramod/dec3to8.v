@@ -1,0 +1,4 @@
+module dec3to8(input e,input [2:0] a,output [7:0]y);
+	dec2to4 lower_dec(.e(e&~a[2]),.a(a[0]),.b(a[1]),.y(y[3:0]));
+	dec2to4 upper_dec(.e(e&a[2]),.a(a[0]),.b(a[1]),.y(y[7:4]));
+endmodule

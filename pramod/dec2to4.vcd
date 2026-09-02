@@ -1,0 +1,85 @@
+$date
+	Mon Aug 31 07:56:31 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb $end
+$var wire 4 ! Y [3:0] $end
+$var reg 1 " A $end
+$var reg 1 # B $end
+$var reg 1 $ E $end
+$scope module DUT $end
+$var wire 1 " A $end
+$var wire 1 # B $end
+$var wire 1 $ E $end
+$var wire 4 % Y [3:0] $end
+$var wire 2 & W [1:0] $end
+$scope module D0 $end
+$var wire 1 $ E $end
+$var wire 1 " S $end
+$var wire 2 ' Y [1:0] $end
+$upscope $end
+$scope module D1 $end
+$var wire 1 ( E $end
+$var wire 1 # S $end
+$var wire 2 ) Y [1:0] $end
+$upscope $end
+$scope module D2 $end
+$var wire 1 * E $end
+$var wire 1 # S $end
+$var wire 2 + Y [1:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 +
+0*
+b0 )
+0(
+b0 '
+b0 &
+b0 %
+0$
+0#
+0"
+b0 !
+$end
+#10
+b1 !
+b1 %
+b1 )
+1(
+b1 &
+b1 '
+1$
+#20
+b10 !
+b10 %
+b10 )
+1#
+#30
+0(
+b1 +
+1*
+b100 !
+b100 %
+b0 )
+b10 &
+b10 '
+0#
+1"
+#40
+b1000 !
+b1000 %
+b10 +
+1#
+#50
