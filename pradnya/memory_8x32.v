@@ -1,5 +1,5 @@
 
-module memory_8x32(
+module memory_7x32(
 input clk,
 input reset,
 input we,
