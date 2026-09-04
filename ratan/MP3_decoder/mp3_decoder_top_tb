@@ -1,0 +1,43 @@
+`timescale 1ns/1ps
+module mp3_decoder_top_tb;
+reg clk;
+reg reset;
+reg data_valid;
+reg signed [3:0] huff_x;
+reg signed [3:0] huff_x;
+wire signed [15:0] pcm_out;
+wire pcm_valid;
+mp3_decoder_top uut(.clk(clk), .reset(reset), .data_valid(data_valid), .huff_x(huff_x), .huff_y(huff_y), .pcm_out(pcm_out), .pcm_valid(pcm_valid));
+always #5 clk=~clk;
+initial begin
+	$dumpfile(mp3_decoder_top.vcd");
+	$dumpvars(0,mp3_decoder_top_tb);
+	clk=0;
+	reset=1;
+	data_valid=0;
+	huff_x=0;
+	huff_y=0;
+	#10;
+	reset=0;
+	#10;
+	data_valid=1;
+	huff_x=2;
+	huff_y=3;
+	#10;
+	data_valid=0
+	#20;
+	data_vslid=1;
+	huff_x=-2;
+	huff_y=-3;
+	#10;
+	data_valid=0;
+	#30;
+	$display("==============================");
+	$display("MP3 DECODER TOP TEST");
+	$display("PCM_OUT=%d", pcm_out);
+	$display("PCM_VALID=%b", pcm_valid);
+	$display("==============================")
+	#10;
+	$finish;
+end
+endmodule
