@@ -1,0 +1,17 @@
+CMOS Inverter
+Vdd vdd 0 5
+Vin in 0 PULSE(0 5 1n 1n 1n 10n 20n)
+
+M1 out in vdd vdd p 
+M2 out in 0 0 n 
+
+.model p pmos
+.model n nmos
+
+.tran 0.1n 40n
+
+.control
+run
+plot v(in) v(out)
+.endc
+.end

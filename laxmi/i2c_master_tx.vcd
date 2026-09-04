@@ -1,0 +1,208 @@
+$date
+	Wed Sep  2 04:54:54 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module i2c_master_tx_tb $end
+$var wire 1 ! sda $end
+$var wire 1 " tx_done $end
+$var wire 1 # tx_busy $end
+$var reg 1 $ clk $end
+$var reg 1 % rst_n $end
+$var reg 1 & scl $end
+$var reg 8 ' tx_data [7:0] $end
+$var reg 1 ( tx_start $end
+$scope module dut $end
+$var wire 1 $ clk $end
+$var wire 1 % rst_n $end
+$var wire 1 & scl $end
+$var wire 1 ! sda $end
+$var wire 8 ) tx_data [7:0] $end
+$var wire 1 ( tx_start $end
+$var reg 8 * bit_count [7:0] $end
+$var reg 1 + sda_drive_low $end
+$var reg 1 # tx_busy $end
+$var reg 1 " tx_done $end
+$var reg 8 , tx_shift_reg [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 ,
+0+
+b0 *
+b0 )
+0(
+b0 '
+1&
+0%
+0$
+0#
+0"
+1!
+$end
+#5
+1$
+#10
+0$
+0&
+#15
+1$
+#20
+0$
+1&
+#25
+1$
+1%
+#30
+1(
+b10100101 '
+b10100101 )
+0$
+0&
+#35
+1$
+#40
+1#
+b10100101 ,
+0$
+1&
+#45
+1$
+#50
+0(
+0$
+0&
+#55
+1$
+#60
+0!
+1+
+b1 *
+b1001010 ,
+0$
+1&
+#65
+1$
+#70
+0$
+0&
+#75
+1$
+#80
+1!
+0+
+b10 *
+b10010100 ,
+0$
+1&
+#85
+1$
+#90
+0$
+0&
+#95
+1$
+#100
+0!
+1+
+b11 *
+b101000 ,
+0$
+1&
+#105
+1$
+#110
+0$
+0&
+#115
+1$
+#120
+b100 *
+b1010000 ,
+0$
+1&
+#125
+1$
+#130
+0$
+0&
+#135
+1$
+#140
+1!
+0+
+b101 *
+b10100000 ,
+0$
+1&
+#145
+1$
+#150
+0$
+0&
+#155
+1$
+#160
+0!
+1+
+b110 *
+b1000000 ,
+0$
+1&
+#165
+1$
+#170
+0$
+0&
+#175
+1$
+#180
+1!
+0+
+b111 *
+b10000000 ,
+0$
+1&
+#185
+1$
+#190
+0$
+0&
+#195
+1$
+#200
+b0 *
+1"
+0#
+0$
+1&
+#205
+1$
+#210
+0$
+0&
+#215
+1$
+#220
+0"
+0$
+1&
+#225
+1$
+#230
+0$
+0&
+#235
+1$
+#240
+0$
+1&

@@ -1,0 +1,45 @@
+#! /usr/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x64c2ed041510 .scope module, "full_subtractor" "full_subtractor" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /INPUT 1 "bin";
+    .port_info 3 /OUTPUT 1 "d";
+    .port_info 4 /OUTPUT 1 "bout";
+o0x7ee63dba0168 .functor BUFZ 1, C4<z>; HiZ drive
+o0x7ee63dba0198 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x64c2ed08ad20 .functor XOR 1, o0x7ee63dba0168, o0x7ee63dba0198, C4<0>, C4<0>;
+o0x7ee63dba01c8 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x64c2ed08ae10 .functor XOR 1, L_0x64c2ed08ad20, o0x7ee63dba01c8, C4<0>, C4<0>;
+L_0x64c2ed08aeb0 .functor NOT 1, o0x7ee63dba0168, C4<0>, C4<0>, C4<0>;
+L_0x64c2ed08afa0 .functor AND 1, L_0x64c2ed08aeb0, o0x7ee63dba0198, C4<1>, C4<1>;
+L_0x64c2ed08b0e0 .functor NOT 1, o0x7ee63dba0168, C4<0>, C4<0>, C4<0>;
+L_0x64c2ed08b150 .functor AND 1, L_0x64c2ed08b0e0, o0x7ee63dba01c8, C4<1>, C4<1>;
+L_0x64c2ed08b2a0 .functor OR 1, L_0x64c2ed08afa0, L_0x64c2ed08b150, C4<0>, C4<0>;
+L_0x64c2ed08b3b0 .functor AND 1, o0x7ee63dba0198, o0x7ee63dba01c8, C4<1>, C4<1>;
+L_0x64c2ed08b470 .functor OR 1, L_0x64c2ed08b2a0, L_0x64c2ed08b3b0, C4<0>, C4<0>;
+v0x64c2ed0416a0_0 .net *"_ivl_0", 0 0, L_0x64c2ed08ad20;  1 drivers
+v0x64c2ed08a320_0 .net *"_ivl_10", 0 0, L_0x64c2ed08b150;  1 drivers
+v0x64c2ed08a400_0 .net *"_ivl_12", 0 0, L_0x64c2ed08b2a0;  1 drivers
+v0x64c2ed08a4f0_0 .net *"_ivl_14", 0 0, L_0x64c2ed08b3b0;  1 drivers
+v0x64c2ed08a5d0_0 .net *"_ivl_4", 0 0, L_0x64c2ed08aeb0;  1 drivers
+v0x64c2ed08a700_0 .net *"_ivl_6", 0 0, L_0x64c2ed08afa0;  1 drivers
+v0x64c2ed08a7e0_0 .net *"_ivl_8", 0 0, L_0x64c2ed08b0e0;  1 drivers
+v0x64c2ed08a8c0_0 .net "a", 0 0, o0x7ee63dba0168;  0 drivers
+v0x64c2ed08a980_0 .net "b", 0 0, o0x7ee63dba0198;  0 drivers
+v0x64c2ed08aa40_0 .net "bin", 0 0, o0x7ee63dba01c8;  0 drivers
+v0x64c2ed08ab00_0 .net "bout", 0 0, L_0x64c2ed08b470;  1 drivers
+v0x64c2ed08abc0_0 .net "d", 0 0, L_0x64c2ed08ae10;  1 drivers
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "subt.v";

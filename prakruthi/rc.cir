@@ -1,0 +1,13 @@
+Simple RC Low Pass Filter 
+V1 in 0 PULSE(0 5 1n 1n 1n 10n 20n)
+R1R in out 1k
+C1 out 0 1p
+
+.tran 0.1n 40n
+
+.control
+run
+plot v(in) v(out)
+.endc
+.end
+

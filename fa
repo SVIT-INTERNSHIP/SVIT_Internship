@@ -1,0 +1,41 @@
+#! /usr/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x59d4504a0510 .scope module, "fa" "fa" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /INPUT 1 "cin";
+    .port_info 3 /OUTPUT 1 "sum";
+    .port_info 4 /OUTPUT 1 "carry";
+o0x784e6a083108 .functor BUFZ 1, C4<z>; HiZ drive
+o0x784e6a083138 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x59d4504e93e0 .functor XOR 1, o0x784e6a083108, o0x784e6a083138, C4<0>, C4<0>;
+o0x784e6a083198 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x59d4504e94d0 .functor XOR 1, L_0x59d4504e93e0, o0x784e6a083198, C4<0>, C4<0>;
+L_0x59d4504e9570 .functor AND 1, o0x784e6a083108, o0x784e6a083138, C4<1>, C4<1>;
+L_0x59d4504e96b0 .functor AND 1, o0x784e6a083138, o0x784e6a083198, C4<1>, C4<1>;
+L_0x59d4504e97a0 .functor OR 1, L_0x59d4504e9570, L_0x59d4504e96b0, C4<0>, C4<0>;
+L_0x59d4504e98b0 .functor AND 1, o0x784e6a083108, o0x784e6a083198, C4<1>, C4<1>;
+L_0x59d4504e9960 .functor OR 1, L_0x59d4504e97a0, L_0x59d4504e98b0, C4<0>, C4<0>;
+v0x59d4504a06a0_0 .net *"_ivl_0", 0 0, L_0x59d4504e93e0;  1 drivers
+v0x59d4504e8ba0_0 .net *"_ivl_10", 0 0, L_0x59d4504e98b0;  1 drivers
+v0x59d4504e8c80_0 .net *"_ivl_4", 0 0, L_0x59d4504e9570;  1 drivers
+v0x59d4504e8d70_0 .net *"_ivl_6", 0 0, L_0x59d4504e96b0;  1 drivers
+v0x59d4504e8e50_0 .net *"_ivl_8", 0 0, L_0x59d4504e97a0;  1 drivers
+v0x59d4504e8f80_0 .net "a", 0 0, o0x784e6a083108;  0 drivers
+v0x59d4504e9040_0 .net "b", 0 0, o0x784e6a083138;  0 drivers
+v0x59d4504e9100_0 .net "carry", 0 0, L_0x59d4504e9960;  1 drivers
+v0x59d4504e91c0_0 .net "cin", 0 0, o0x784e6a083198;  0 drivers
+v0x59d4504e9280_0 .net "sum", 0 0, L_0x59d4504e94d0;  1 drivers
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "fa.v";
