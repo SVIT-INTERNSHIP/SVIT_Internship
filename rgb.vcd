@@ -1,0 +1,60 @@
+$date
+	Thu Sep  3 04:30:11 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module rgb_tb $end
+$var wire 4 ! red [3:0] $end
+$var wire 4 " green [3:0] $end
+$var wire 4 # blue [3:0] $end
+$var reg 10 $ x [9:0] $end
+$var reg 10 % y [9:0] $end
+$scope module uut $end
+$var wire 10 & x [9:0] $end
+$var wire 10 ' y [9:0] $end
+$var reg 4 ( blue [3:0] $end
+$var reg 4 ) green [3:0] $end
+$var reg 4 * red [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b1111 *
+b0 )
+b0 (
+b1100100 '
+b1100100 &
+b1100100 %
+b1100100 $
+b0 #
+b0 "
+b1111 !
+$end
+#10
+b1111 "
+b1111 )
+b0 !
+b0 *
+b100101100 $
+b100101100 &
+#20
+b1111 #
+b1111 (
+b111110100 $
+b111110100 &
+#30
+b0 "
+b0 )
+b111110100 %
+b111110100 '
+b1010111100 $
+b1010111100 &
+#40
