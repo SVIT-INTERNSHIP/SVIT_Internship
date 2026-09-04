@@ -1,0 +1,56 @@
+$date
+	Thu Sep  3 05:07:24 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module dequantizer_tb $end
+$var wire 16 ! y_out [15:0] $end
+$var wire 16 " x_out [15:0] $end
+$var wire 1 # output_valid $end
+$var reg 1 $ clk $end
+$var reg 1 % data_valid $end
+$var reg 1 & reset $end
+$var reg 4 ' x_in [3:0] $end
+$var reg 4 ( y_in [3:0] $end
+$scope module uut $end
+$var wire 1 $ clk $end
+$var wire 1 % data_valid $end
+$var wire 1 & reset $end
+$var wire 4 ) x_in [3:0] $end
+$var wire 4 * y_in [3:0] $end
+$var reg 1 # output_valid $end
+$var reg 16 + x_out [15:0] $end
+$var reg 16 , y_out [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#50000
+$dumpvars
+b1001 ,
+b100 +
+b11 *
+b10 )
+b11 (
+b10 '
+0&
+0%
+0$
+0#
+b100 "
+b1001 !
+$end
+#55000
+1$
+#60000
+0$
+#65000
+1$
+#70000
+0$
