@@ -1,0 +1,159 @@
+$date
+	Wed Sep  2 07:45:46 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module fifo_tb $end
+$var wire 1 ! full $end
+$var wire 1 " empty $end
+$var wire 8 # data_out [7:0] $end
+$var reg 1 $ clk $end
+$var reg 8 % data_in [7:0] $end
+$var reg 1 & read_en $end
+$var reg 1 ' reset $end
+$var reg 1 ( write_en $end
+$scope module uut $end
+$var wire 1 $ clk $end
+$var wire 8 ) data_in [7:0] $end
+$var wire 1 & read_en $end
+$var wire 1 ' reset $end
+$var wire 1 ( write_en $end
+$var wire 1 ! full $end
+$var wire 1 " empty $end
+$var reg 4 * count [3:0] $end
+$var reg 8 + data_out [7:0] $end
+$var reg 3 , read_ptr [2:0] $end
+$var reg 3 - write_ptr [2:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#10
+$dumpvars
+b0 -
+b0 ,
+b0 +
+b0 *
+b1010 )
+1(
+0'
+0&
+b1010 %
+0$
+b0 #
+1"
+0!
+$end
+#15
+0"
+b1 *
+b1 -
+1$
+#20
+0$
+b10100 %
+b10100 )
+#25
+b10 *
+b10 -
+1$
+#30
+0$
+b11110 %
+b11110 )
+#35
+b11 *
+b11 -
+1$
+#40
+0$
+b101000 %
+b101000 )
+#45
+b100 *
+b100 -
+1$
+#50
+0$
+1&
+0(
+#55
+b11 *
+b1 ,
+b1010 #
+b1010 +
+1$
+#60
+0$
+#65
+b10 *
+b10 ,
+b10100 #
+b10100 +
+1$
+#70
+0$
+#75
+b1 *
+b11 ,
+b11110 #
+b11110 +
+1$
+#80
+0$
+#85
+1"
+b0 *
+b100 ,
+b101000 #
+b101000 +
+1$
+#90
+0$
+b110010 %
+b110010 )
+1(
+0&
+#95
+0"
+b1 *
+b101 -
+1$
+#100
+0$
+b111100 %
+b111100 )
+#105
+b10 *
+b110 -
+1$
+#110
+0$
+b1000110 %
+b1000110 )
+1&
+1(
+#115
+b101 ,
+b110010 #
+b110010 +
+b111 -
+1$
+#120
+0$
+0&
+0(
+#125
+1$
+#130
+0$
+#135
+1$
+#140
+0$

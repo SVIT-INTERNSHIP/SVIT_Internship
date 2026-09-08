@@ -1,0 +1,49 @@
+$date
+	Thu Sep  3 04:37:08 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module main_data_extractor_tb $end
+$var wire 1 ! main_data_valid $end
+$var wire 32 " main_data [31:0] $end
+$var reg 1 # clk $end
+$var reg 1 $ data_bit $end
+$var reg 1 % data_valid $end
+$var reg 9 & main_data_begin [8:0] $end
+$var reg 1 ' reset $end
+$scope module uut $end
+$var wire 1 # clk $end
+$var wire 1 $ data_bit $end
+$var wire 1 % data_valid $end
+$var wire 9 ( main_data_begin [8:0] $end
+$var wire 1 ' reset $end
+$var reg 6 ) bit_count [5:0] $end
+$var reg 32 * main_data [31:0] $end
+$var reg 1 ! main_data_valid $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#360000
+$dumpvars
+b10101011010110011010011011001011 *
+b0 )
+b0 (
+0'
+b0 &
+0%
+1$
+0#
+b10101011010110011010011011001011 "
+0!
+$end
+#365000
+1#
+#370000
+0#

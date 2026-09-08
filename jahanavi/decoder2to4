@@ -1,0 +1,73 @@
+#! /usr/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x55c4242e92d0 .scope module, "decoder_2to4" "decoder_2to4" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 2 "A";
+    .port_info 1 /INPUT 1 "EN";
+    .port_info 2 /OUTPUT 4 "Y";
+o0x744e2f3724c8 .functor BUFZ 2, C4<zz>; HiZ drive
+v0x55c42430ef20_0 .net "A", 1 0, o0x744e2f3724c8;  0 drivers
+v0x55c42430f020_0 .net "E0", 0 0, L_0x55c42430f480;  1 drivers
+v0x55c42430f130_0 .net "E1", 0 0, L_0x55c42430f590;  1 drivers
+o0x744e2f3723a8 .functor BUFZ 1, C4<z>; HiZ drive
+v0x55c42430f220_0 .net "EN", 0 0, o0x744e2f3723a8;  0 drivers
+v0x55c42430f2c0_0 .net "Y", 3 0, L_0x55c42430fcf0;  1 drivers
+L_0x55c42430f670 .part o0x744e2f3724c8, 1, 1;
+L_0x55c42430f900 .part o0x744e2f3724c8, 0, 1;
+L_0x55c42430fc50 .part o0x744e2f3724c8, 0, 1;
+L_0x55c42430fcf0 .concat8 [ 1 1 1 1], L_0x55c42430f7a0, L_0x55c42430f840, L_0x55c42430fa60, L_0x55c42430fb90;
+S_0x55c4242ea9d0 .scope module, "d1" "decoder_1to2" 2 10, 3 1 0, S_0x55c4242e92d0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /INPUT 1 "EN";
+    .port_info 2 /OUTPUT 1 "Y0";
+    .port_info 3 /OUTPUT 1 "Y1";
+L_0x55c42430f710 .functor NOT 1, L_0x55c42430f900, C4<0>, C4<0>, C4<0>;
+L_0x55c42430f7a0 .functor AND 1, L_0x55c42430f480, L_0x55c42430f710, C4<1>, C4<1>;
+L_0x55c42430f840 .functor AND 1, L_0x55c42430f480, L_0x55c42430f900, C4<1>, C4<1>;
+v0x55c4242eb040_0 .net "A", 0 0, L_0x55c42430f900;  1 drivers
+v0x55c4242ead80_0 .net "EN", 0 0, L_0x55c42430f480;  alias, 1 drivers
+v0x55c4242e9970_0 .net "Y0", 0 0, L_0x55c42430f7a0;  1 drivers
+v0x55c4242e9680_0 .net "Y1", 0 0, L_0x55c42430f840;  1 drivers
+v0x55c42430dfb0_0 .net *"_ivl_0", 0 0, L_0x55c42430f710;  1 drivers
+S_0x55c42430e160 .scope module, "d2" "decoder_1to2" 2 11, 3 1 0, S_0x55c4242e92d0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /INPUT 1 "EN";
+    .port_info 2 /OUTPUT 1 "Y0";
+    .port_info 3 /OUTPUT 1 "Y1";
+L_0x55c42430f9f0 .functor NOT 1, L_0x55c42430fc50, C4<0>, C4<0>, C4<0>;
+L_0x55c42430fa60 .functor AND 1, L_0x55c42430f590, L_0x55c42430f9f0, C4<1>, C4<1>;
+L_0x55c42430fb90 .functor AND 1, L_0x55c42430f590, L_0x55c42430fc50, C4<1>, C4<1>;
+v0x55c42430e3d0_0 .net "A", 0 0, L_0x55c42430fc50;  1 drivers
+v0x55c42430e490_0 .net "EN", 0 0, L_0x55c42430f590;  alias, 1 drivers
+v0x55c42430e550_0 .net "Y0", 0 0, L_0x55c42430fa60;  1 drivers
+v0x55c42430e5f0_0 .net "Y1", 0 0, L_0x55c42430fb90;  1 drivers
+v0x55c42430e6b0_0 .net *"_ivl_0", 0 0, L_0x55c42430f9f0;  1 drivers
+S_0x55c42430e860 .scope module, "do" "decoder_1to2" 2 9, 3 1 0, S_0x55c4242e92d0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /INPUT 1 "EN";
+    .port_info 2 /OUTPUT 1 "Y0";
+    .port_info 3 /OUTPUT 1 "Y1";
+L_0x55c42430f410 .functor NOT 1, L_0x55c42430f670, C4<0>, C4<0>, C4<0>;
+L_0x55c42430f480 .functor AND 1, o0x744e2f3723a8, L_0x55c42430f410, C4<1>, C4<1>;
+L_0x55c42430f590 .functor AND 1, o0x744e2f3723a8, L_0x55c42430f670, C4<1>, C4<1>;
+v0x55c42430eab0_0 .net "A", 0 0, L_0x55c42430f670;  1 drivers
+v0x55c42430eb70_0 .net "EN", 0 0, o0x744e2f3723a8;  alias, 0 drivers
+v0x55c42430ec30_0 .net "Y0", 0 0, L_0x55c42430f480;  alias, 1 drivers
+v0x55c42430ed00_0 .net "Y1", 0 0, L_0x55c42430f590;  alias, 1 drivers
+v0x55c42430edd0_0 .net *"_ivl_0", 0 0, L_0x55c42430f410;  1 drivers
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "decoder2to4.v";
+    "decoder1to2.v";

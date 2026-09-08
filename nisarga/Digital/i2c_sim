@@ -1,0 +1,82 @@
+#! /usr/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x60e42eddd490 .scope module, "i2c_slave_ip" "i2c_slave_ip" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "reset";
+    .port_info 2 /INPUT 7 "received_addr";
+    .port_info 3 /INPUT 1 "check_addr_flag";
+    .port_info 4 /OUTPUT 1 "ack_bit";
+L_0x60e42ee2a7a0 .functor BUFZ 1, v0x60e42eddd850_0, C4<0>, C4<0>, C4<0>;
+v0x60e42ee2a240_0 .net "ack_bit", 0 0, L_0x60e42ee2a7a0;  1 drivers
+v0x60e42ee2a320_0 .net "address_ack", 0 0, v0x60e42eddd850_0;  1 drivers
+o0x78dc08572048 .functor BUFZ 1, C4<z>; HiZ drive
+v0x60e42ee2a3e0_0 .net "check_addr_flag", 0 0, o0x78dc08572048;  0 drivers
+o0x78dc08572078 .functor BUFZ 1, C4<z>; HiZ drive
+v0x60e42ee2a4e0_0 .net "clk", 0 0, o0x78dc08572078;  0 drivers
+o0x78dc085720d8 .functor BUFZ 7, C4<zzzzzzz>; HiZ drive
+v0x60e42ee2a5b0_0 .net "received_addr", 6 0, o0x78dc085720d8;  0 drivers
+o0x78dc08572108 .functor BUFZ 1, C4<z>; HiZ drive
+v0x60e42ee2a6a0_0 .net "reset", 0 0, o0x78dc08572108;  0 drivers
+S_0x60e42eddd620 .scope module, "u_address_matcher" "i2c_slave_address_matcher" 2 11, 3 1 0, S_0x60e42eddd490;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "reset";
+    .port_info 2 /INPUT 7 "received_addr";
+    .port_info 3 /INPUT 1 "check_addr_flag";
+    .port_info 4 /OUTPUT 1 "ack_bit";
+v0x60e42eddd850_0 .var "ack_bit", 0 0;
+v0x60e42ee29d40_0 .net "check_addr_flag", 0 0, o0x78dc08572048;  alias, 0 drivers
+v0x60e42ee29e00_0 .net "clk", 0 0, o0x78dc08572078;  alias, 0 drivers
+v0x60e42ee29ed0_0 .var "my_slave_address", 6 0;
+v0x60e42ee29fb0_0 .net "received_addr", 6 0, o0x78dc085720d8;  alias, 0 drivers
+v0x60e42ee2a0e0_0 .net "reset", 0 0, o0x78dc08572108;  alias, 0 drivers
+E_0x60e42ee176d0 .event posedge, v0x60e42ee2a0e0_0, v0x60e42ee29e00_0;
+    .scope S_0x60e42eddd620;
+T_0 ;
+    %wait E_0x60e42ee176d0;
+    %load/vec4 v0x60e42ee2a0e0_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_0.0, 8;
+    %pushi/vec4 85, 0, 7;
+    %assign/vec4 v0x60e42ee29ed0_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v0x60e42eddd850_0, 0;
+    %jmp T_0.1;
+T_0.0 ;
+    %load/vec4 v0x60e42ee29d40_0;
+    %pad/u 32;
+    %cmpi/e 1, 0, 32;
+    %jmp/0xz  T_0.2, 4;
+    %load/vec4 v0x60e42ee29fb0_0;
+    %load/vec4 v0x60e42ee29ed0_0;
+    %cmp/e;
+    %jmp/0xz  T_0.4, 4;
+    %pushi/vec4 1, 0, 1;
+    %assign/vec4 v0x60e42eddd850_0, 0;
+    %jmp T_0.5;
+T_0.4 ;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v0x60e42eddd850_0, 0;
+T_0.5 ;
+    %jmp T_0.3;
+T_0.2 ;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v0x60e42eddd850_0, 0;
+T_0.3 ;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "i2c_slave_ip.v";
+    "./prakruthi/I2C/i2c_slave.v";

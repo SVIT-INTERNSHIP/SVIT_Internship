@@ -1,0 +1,93 @@
+$date
+	Thu Aug 27 12:13:45 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module register_bank_tb $end
+$var wire 8 ! dout [7:0] $end
+$var reg 3 " addr [2:0] $end
+$var reg 1 # clk $end
+$var reg 8 $ din [7:0] $end
+$var reg 1 % we $end
+$scope module uut $end
+$var wire 3 & addr [2:0] $end
+$var wire 1 # clk $end
+$var wire 8 ' din [7:0] $end
+$var wire 8 ( dout [7:0] $end
+$var wire 1 % we $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx (
+b11001 '
+b0 &
+1%
+b11001 $
+0#
+b0 "
+bx !
+$end
+#5
+b11001 !
+b11001 (
+1#
+#10
+0#
+b110010 $
+b110010 '
+bx !
+bx (
+b11 "
+b11 &
+#15
+b110010 !
+b110010 (
+1#
+#20
+0#
+b1100100 $
+b1100100 '
+bx !
+bx (
+b111 "
+b111 &
+#25
+b1100100 !
+b1100100 (
+1#
+#30
+0#
+b11001 !
+b11001 (
+b0 "
+b0 &
+0%
+#35
+1#
+#40
+0#
+b110010 !
+b110010 (
+b11 "
+b11 &
+#45
+1#
+#50
+0#
+b1100100 !
+b1100100 (
+b111 "
+b111 &
+#55
+1#
+#60
+0#

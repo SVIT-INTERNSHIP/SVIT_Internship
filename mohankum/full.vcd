@@ -1,0 +1,87 @@
+$date
+	Thu Aug 27 08:14:53 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module full_tb $end
+$var wire 1 ! Difference $end
+$var wire 1 " Borrow $end
+$var reg 1 # A $end
+$var reg 1 $ B $end
+$var reg 1 % Bin $end
+$scope module uut $end
+$var wire 1 # A $end
+$var wire 1 $ B $end
+$var wire 1 " Borrow $end
+$var wire 1 % Cin $end
+$var wire 1 ! Difference $end
+$var wire 1 & D1 $end
+$var wire 1 ' B2 $end
+$var wire 1 ( B1 $end
+$scope module H1 $end
+$var wire 1 # A $end
+$var wire 1 $ B $end
+$var wire 1 ( Borrow $end
+$var wire 1 & Difference $end
+$upscope $end
+$scope module H2 $end
+$var wire 1 & A $end
+$var wire 1 % B $end
+$var wire 1 ' Borrow $end
+$var wire 1 ! Difference $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0(
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#10
+1"
+1!
+1'
+1%
+#20
+0'
+1&
+1(
+0%
+1$
+#30
+0!
+1%
+#40
+0"
+1!
+0(
+0%
+0$
+1#
+#50
+0!
+1%
+#60
+0&
+0%
+1$
+#70
+1"
+1!
+1'
+1%
+#80

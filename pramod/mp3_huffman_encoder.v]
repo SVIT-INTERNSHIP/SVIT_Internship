@@ -1,0 +1,40 @@
+module mp3_huffman_encoder ( 
+    input clk, rst, valid, flush, [3:0] pcm_data,
+    output reg out_valid, output reg [31:0] main_data_word,
+                          output reg [5:0] bit_count);
+    reg [2:0] code,len;
+    reg [63:0] buf_reg;
+    always  @(*) case (pcm_data)
+        4'd0: begin code = 3'b001; len = 3'd1; end 
+        4'd1: begin code = 3'b001; len = 3'd2; end
+        4'd2: begin code = 3'b001; len = 3'd3; end 
+        4'd3: begin code = 3'b000; len = 3'd3; end
+        default: begin code = 3'b000; len = 3''d0; end
+    endcase
+end
+    wire [2:0] masked = code & ((1'b1 << len) - 1'b1);
+    always @(posedge clk or posedge rst) begin
+        if (rst) begin
+            buf_reg <= 0;
+            bit_count <= 0;
+            main_data_word <= 0;
+            out_valid <= 0;
+       end
+       else begin
+           out_valid <= 0;
+           if (valid) begin
+               if ((bit_count + len) >= 32) begin
+                    main_data_word <= ((buf_reg << len) | masked) >>
+                         ((bit_count + len) - 32);
+                    buf_reg <= ((buf_reg << len) | masked);
+                          bit_count <= (bit_count + len) - 32;
+                               out_valid <= 1;
+
+            end else begin buf_reg <= (buf_reg << len) | masked;
+                    bit_count <= bit_count + len; end
+        end else if (flush && bit_count > 0) begin
+            main_data_word <= buf_reg << (32 - bit_count); buf_reg <= 0; bit_count <= 0; out_valid <= 1;
+        end
+    end
+ end
+endmodule

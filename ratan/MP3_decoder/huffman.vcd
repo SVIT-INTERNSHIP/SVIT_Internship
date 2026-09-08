@@ -1,0 +1,59 @@
+$date
+	Wed Sep  2 11:53:35 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module huffman_decoder_tb $end
+$var wire 4 ! y [3:0] $end
+$var wire 4 " x [3:0] $end
+$var wire 1 # decode_valid $end
+$var reg 1 $ clk $end
+$var reg 1 % data_bit $end
+$var reg 1 & data_valid $end
+$var reg 1 ' reset $end
+$var reg 24 ( test_data [23:0] $end
+$var integer 32 ) i [31:0] $end
+$scope module uut $end
+$var wire 1 $ clk $end
+$var wire 1 % data_bit $end
+$var wire 1 & data_valid $end
+$var wire 1 ' reset $end
+$var reg 3 * bit_count [2:0] $end
+$var reg 4 + code [3:0] $end
+$var reg 1 # decode_valid $end
+$var reg 4 , x [3:0] $end
+$var reg 4 - y [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#280000
+$dumpvars
+b1 -
+b0 ,
+b0 +
+b0 *
+b11111111111111111111111111111111 )
+b10010001101000101 (
+0'
+0&
+1%
+0$
+0#
+b0 "
+b1 !
+$end
+#285000
+1$
+#290000
+0$
+#295000
+1$
+#300000
+0$

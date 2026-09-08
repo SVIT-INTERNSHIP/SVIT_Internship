@@ -1,0 +1,45 @@
+`timescale 1ns/1ps
+
+module tb_mp3_sideinfo;
+
+reg clk,reset,start;
+reg [31:0] header;
+reg [255:0] side_info;
+
+wire done,error;
+wire [8:0] main_data_begin;
+wire [2:0] private_bits;
+wire [7:0]scfsi;
+
+wire [11:0] part23_0,part23_1,part23_2,part23_3,
+wire [8:0] big_0,big_1,big_2,big_3,
+wire [7:0] gain_0,gain_1,gain_2,gain_3
+wire  win_0,win_1,win_2,win_3
+);
+
+mp3_sideinfo dut(
+clk,rest,start,header,side_info
+done,error
+main_data_begin,private_bits,scfsi,
+part23_0,part23_1,part23_2,part23_3,
+big_0,big_1,big_2,big_3,
+gain_0,gain_1,gain_2,gain_3,
+win_0,win_1,win_2,win_3
+);
+
+always #5 clk~clk;
+
+initial begin
+
+$dumpfile("mp3.vcd");
+$dumpvars(0,tb_mp3_sideinfo);
+
+clk=0;
+clk=1;
+clk=0;
+
+header=32'hFFFB9000;
+side_info=256'b0;
+
+side_info[255:247]=9'h155;
+side_

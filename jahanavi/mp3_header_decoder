@@ -1,0 +1,97 @@
+#! /usr/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x5bc00a857620 .scope module, "mp3_header_decoder_tb" "mp3_header_decoder_tb" 2 1;
+ .timescale 0 0;
+v0x5bc00a8839c0_0 .net "bitrate_index", 3 0, L_0x5bc00a8848a0;  1 drivers
+v0x5bc00a883aa0_0 .net "channel_mode", 1 0, L_0x5bc00a884cf0;  1 drivers
+v0x5bc00a883b40_0 .net "copyright_bit", 0 0, L_0x5bc00a884f30;  1 drivers
+v0x5bc00a883be0_0 .net "emphasis", 1 0, L_0x5bc00a885130;  1 drivers
+v0x5bc00a883c80_0 .var "header", 31 0;
+v0x5bc00a883d20_0 .net "layer", 1 0, L_0x5bc00a884650;  1 drivers
+v0x5bc00a883df0_0 .net "mode_extension", 1 0, L_0x5bc00a884de0;  1 drivers
+v0x5bc00a883ec0_0 .net "original", 0 0, L_0x5bc00a884fd0;  1 drivers
+v0x5bc00a883f90_0 .net "padding", 0 0, L_0x5bc00a884ac0;  1 drivers
+v0x5bc00a884060_0 .net "private_bit", 0 0, L_0x5bc00a884bb0;  1 drivers
+v0x5bc00a884130_0 .net "protection", 0 0, L_0x5bc00a8847d0;  1 drivers
+v0x5bc00a884200_0 .net "sample_rate_index", 1 0, L_0x5bc00a884990;  1 drivers
+v0x5bc00a8842d0_0 .net "sync", 10 0, L_0x5bc00a884470;  1 drivers
+v0x5bc00a8843a0_0 .net "version", 1 0, L_0x5bc00a884560;  1 drivers
+S_0x5bc00a850f30 .scope module, "dut" "mp3_header_decoder" 2 17, 3 1 0, S_0x5bc00a857620;
+ .timescale 0 0;
+    .port_info 0 /INPUT 32 "header";
+    .port_info 1 /OUTPUT 11 "sync";
+    .port_info 2 /OUTPUT 2 "version";
+    .port_info 3 /OUTPUT 2 "layer";
+    .port_info 4 /OUTPUT 1 "protection";
+    .port_info 5 /OUTPUT 4 "bitrate_index";
+    .port_info 6 /OUTPUT 2 "sample_rate_index";
+    .port_info 7 /OUTPUT 1 "padding";
+    .port_info 8 /OUTPUT 1 "private_bit";
+    .port_info 9 /OUTPUT 2 "channel_mode";
+    .port_info 10 /OUTPUT 2 "mode_extension";
+    .port_info 11 /OUTPUT 1 "copyright_bit";
+    .port_info 12 /OUTPUT 1 "original";
+    .port_info 13 /OUTPUT 2 "emphasis";
+v0x5bc00a850af0_0 .net "bitrate_index", 3 0, L_0x5bc00a8848a0;  alias, 1 drivers
+v0x5bc00a882d10_0 .net "channel_mode", 1 0, L_0x5bc00a884cf0;  alias, 1 drivers
+v0x5bc00a882df0_0 .net "copyright_bit", 0 0, L_0x5bc00a884f30;  alias, 1 drivers
+v0x5bc00a882e90_0 .net "emphasis", 1 0, L_0x5bc00a885130;  alias, 1 drivers
+v0x5bc00a882f70_0 .net "header", 31 0, v0x5bc00a883c80_0;  1 drivers
+v0x5bc00a8830a0_0 .net "layer", 1 0, L_0x5bc00a884650;  alias, 1 drivers
+v0x5bc00a883180_0 .net "mode_extension", 1 0, L_0x5bc00a884de0;  alias, 1 drivers
+v0x5bc00a883260_0 .net "original", 0 0, L_0x5bc00a884fd0;  alias, 1 drivers
+v0x5bc00a883320_0 .net "padding", 0 0, L_0x5bc00a884ac0;  alias, 1 drivers
+v0x5bc00a8833e0_0 .net "private_bit", 0 0, L_0x5bc00a884bb0;  alias, 1 drivers
+v0x5bc00a8834a0_0 .net "protection", 0 0, L_0x5bc00a8847d0;  alias, 1 drivers
+v0x5bc00a883560_0 .net "sample_rate_index", 1 0, L_0x5bc00a884990;  alias, 1 drivers
+v0x5bc00a883640_0 .net "sync", 10 0, L_0x5bc00a884470;  alias, 1 drivers
+v0x5bc00a883720_0 .net "version", 1 0, L_0x5bc00a884560;  alias, 1 drivers
+L_0x5bc00a884470 .part v0x5bc00a883c80_0, 21, 11;
+L_0x5bc00a884560 .part v0x5bc00a883c80_0, 19, 2;
+L_0x5bc00a884650 .part v0x5bc00a883c80_0, 17, 2;
+L_0x5bc00a8847d0 .part v0x5bc00a883c80_0, 16, 1;
+L_0x5bc00a8848a0 .part v0x5bc00a883c80_0, 12, 4;
+L_0x5bc00a884990 .part v0x5bc00a883c80_0, 10, 2;
+L_0x5bc00a884ac0 .part v0x5bc00a883c80_0, 9, 1;
+L_0x5bc00a884bb0 .part v0x5bc00a883c80_0, 8, 1;
+L_0x5bc00a884cf0 .part v0x5bc00a883c80_0, 6, 2;
+L_0x5bc00a884de0 .part v0x5bc00a883c80_0, 4, 2;
+L_0x5bc00a884f30 .part v0x5bc00a883c80_0, 3, 1;
+L_0x5bc00a884fd0 .part v0x5bc00a883c80_0, 2, 1;
+L_0x5bc00a885130 .part v0x5bc00a883c80_0, 0, 2;
+    .scope S_0x5bc00a857620;
+T_0 ;
+    %vpi_call 2 34 "$dumpfile", "mp3_header.vcd" {0 0 0};
+    %vpi_call 2 35 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x5bc00a857620 {0 0 0};
+    %pushi/vec4 4294676580, 0, 32;
+    %store/vec4 v0x5bc00a883c80_0, 0, 32;
+    %delay 10, 0;
+    %vpi_call 2 40 "$display", "Sync =%b", v0x5bc00a8842d0_0 {0 0 0};
+    %vpi_call 2 41 "$display", "Version =%b", v0x5bc00a8843a0_0 {0 0 0};
+    %vpi_call 2 42 "$display", "Layer =%b", v0x5bc00a883d20_0 {0 0 0};
+    %vpi_call 2 43 "$display", "Protection =%b", v0x5bc00a884130_0 {0 0 0};
+    %vpi_call 2 44 "$display", "Bitrate Index =%b", v0x5bc00a8839c0_0 {0 0 0};
+    %vpi_call 2 45 "$display", "Sample Rate Index =%b", v0x5bc00a884200_0 {0 0 0};
+    %vpi_call 2 46 "$display", "Padding =%b", v0x5bc00a883f90_0 {0 0 0};
+    %vpi_call 2 47 "$display", "Private Bit =%b", v0x5bc00a884060_0 {0 0 0};
+    %vpi_call 2 48 "$display", "Channel Mode =%b", v0x5bc00a883aa0_0 {0 0 0};
+    %vpi_call 2 49 "$display", "mode extension =%b", v0x5bc00a883df0_0 {0 0 0};
+    %vpi_call 2 50 "$display", "Copyright =%b", v0x5bc00a883b40_0 {0 0 0};
+    %vpi_call 2 51 "$display", "Original =%b", v0x5bc00a883ec0_0 {0 0 0};
+    %vpi_call 2 52 "$display", "Emphasis =%b", v0x5bc00a883be0_0 {0 0 0};
+    %vpi_call 2 53 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "mp3_header_decoder_tb.v";
+    "mp3_header_decoder.v";

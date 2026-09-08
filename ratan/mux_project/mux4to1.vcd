@@ -1,0 +1,80 @@
+$date
+	Mon Aug 31 07:22:59 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module mux4to1_tb $end
+$var wire 1 ! Y $end
+$var reg 1 " I0 $end
+$var reg 1 # I1 $end
+$var reg 1 $ I2 $end
+$var reg 1 % I3 $end
+$var reg 1 & S0 $end
+$var reg 1 ' S1 $end
+$scope module DUT $end
+$var wire 1 " I0 $end
+$var wire 1 # I1 $end
+$var wire 1 $ I2 $end
+$var wire 1 % I3 $end
+$var wire 1 & S0 $end
+$var wire 1 ' S1 $end
+$var wire 1 ! Y $end
+$var wire 1 ( W1 $end
+$var wire 1 ) W0 $end
+$scope module MUX0 $end
+$var wire 1 " I0 $end
+$var wire 1 # I1 $end
+$var wire 1 & S $end
+$var wire 1 ) Y $end
+$upscope $end
+$scope module MUX1 $end
+$var wire 1 $ I0 $end
+$var wire 1 % I1 $end
+$var wire 1 & S $end
+$var wire 1 ( Y $end
+$upscope $end
+$scope module MUX2 $end
+$var wire 1 ) I0 $end
+$var wire 1 ( I1 $end
+$var wire 1 ' S $end
+$var wire 1 ! Y $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0)
+0(
+0'
+0&
+1%
+0$
+1#
+0"
+0!
+$end
+#10
+1!
+1)
+1(
+1&
+#20
+0!
+0)
+0(
+0&
+1'
+#30
+1!
+1)
+1(
+1&
+#40

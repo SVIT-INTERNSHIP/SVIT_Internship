@@ -1,0 +1,17 @@
+*Analog voltage model of AND gate
+
+V1 A 0 PULSE(0 5 0 1n 1n 10m 20m)
+V2 B 0 PULSE(0 5 0 1n 1n 20m 40m)
+
+*Behavioral AND gate
+B1 OUT 0 V = {5*u(V(A)-2.5)*u(V(B)-2.5)}
+
+.tran 0.1m 100m
+
+.control
+run
+plot v(A) v(B) v(OUT)
+.endc
+
+.end
+ 

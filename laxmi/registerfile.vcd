@@ -1,0 +1,109 @@
+$date
+	Fri Aug 28 08:54:32 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module registerfile_tb $end
+$var wire 8 ! read_data [7:0] $end
+$var reg 1 " clk $end
+$var reg 4 # read_addr [3:0] $end
+$var reg 1 $ reset $end
+$var reg 4 % write_addr [3:0] $end
+$var reg 8 & write_data [7:0] $end
+$var reg 1 ' write_enable $end
+$scope module uut $end
+$var wire 1 " clk $end
+$var wire 4 ( read_addr [3:0] $end
+$var wire 8 ) read_data [7:0] $end
+$var wire 1 $ reset $end
+$var wire 4 * write_addr [3:0] $end
+$var wire 8 + write_data [7:0] $end
+$var wire 1 ' write_enable $end
+$var integer 32 , i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx ,
+b0 +
+b0 *
+bx )
+b0 (
+0'
+b0 &
+b0 %
+1$
+b0 #
+0"
+bx !
+$end
+#5
+b0 !
+b0 )
+b10000 ,
+1"
+#10
+0"
+b110111 &
+b110111 +
+1'
+0$
+#15
+b110111 !
+b110111 )
+1"
+#20
+0"
+b1100100 &
+b1100100 +
+b101 %
+b101 *
+#25
+1"
+#30
+0"
+b11001000 &
+b11001000 +
+b1010 %
+b1010 *
+#35
+1"
+#40
+0"
+0'
+#45
+1"
+#50
+0"
+b1100100 !
+b1100100 )
+b101 #
+b101 (
+#55
+1"
+#60
+0"
+b11001000 !
+b11001000 )
+b1010 #
+b1010 (
+#65
+1"
+#70
+0"
+b0 !
+b0 )
+b1111 #
+b1111 (
+#75
+1"
+#80
+0"

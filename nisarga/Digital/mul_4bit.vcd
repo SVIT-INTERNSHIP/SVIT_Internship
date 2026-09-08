@@ -1,0 +1,263 @@
+$date
+	Thu Aug 27 10:09:13 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module mul_4bit_tb $end
+$var wire 8 ! P [7:0] $end
+$var reg 4 " A [3:0] $end
+$var reg 4 # B [3:0] $end
+$scope module uut $end
+$var wire 4 $ A [3:0] $end
+$var wire 4 % B [3:0] $end
+$var wire 16 & partial [15:0] $end
+$var wire 8 ' P [7:0] $end
+$scope module m0 $end
+$var wire 1 ( A $end
+$var wire 1 ) B $end
+$var wire 1 * P $end
+$upscope $end
+$scope module m1 $end
+$var wire 1 + A $end
+$var wire 1 , B $end
+$var wire 1 - P $end
+$upscope $end
+$scope module m10 $end
+$var wire 1 . A $end
+$var wire 1 / B $end
+$var wire 1 0 P $end
+$upscope $end
+$scope module m11 $end
+$var wire 1 1 A $end
+$var wire 1 2 B $end
+$var wire 1 3 P $end
+$upscope $end
+$scope module m12 $end
+$var wire 1 4 A $end
+$var wire 1 5 B $end
+$var wire 1 6 P $end
+$upscope $end
+$scope module m13 $end
+$var wire 1 7 A $end
+$var wire 1 8 B $end
+$var wire 1 9 P $end
+$upscope $end
+$scope module m14 $end
+$var wire 1 : A $end
+$var wire 1 ; B $end
+$var wire 1 < P $end
+$upscope $end
+$scope module m15 $end
+$var wire 1 = A $end
+$var wire 1 > B $end
+$var wire 1 ? P $end
+$upscope $end
+$scope module m2 $end
+$var wire 1 @ A $end
+$var wire 1 A B $end
+$var wire 1 B P $end
+$upscope $end
+$scope module m3 $end
+$var wire 1 C A $end
+$var wire 1 D B $end
+$var wire 1 E P $end
+$upscope $end
+$scope module m4 $end
+$var wire 1 F A $end
+$var wire 1 G B $end
+$var wire 1 H P $end
+$upscope $end
+$scope module m5 $end
+$var wire 1 I A $end
+$var wire 1 J B $end
+$var wire 1 K P $end
+$upscope $end
+$scope module m6 $end
+$var wire 1 L A $end
+$var wire 1 M B $end
+$var wire 1 N P $end
+$upscope $end
+$scope module m7 $end
+$var wire 1 O A $end
+$var wire 1 P B $end
+$var wire 1 Q P $end
+$upscope $end
+$scope module m8 $end
+$var wire 1 R A $end
+$var wire 1 S B $end
+$var wire 1 T P $end
+$upscope $end
+$scope module m9 $end
+$var wire 1 U A $end
+$var wire 1 V B $end
+$var wire 1 W P $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0W
+0V
+0U
+0T
+0S
+0R
+0Q
+0P
+0O
+0N
+0M
+0L
+0K
+0J
+0I
+0H
+0G
+0F
+0E
+0D
+0C
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+08
+07
+06
+05
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+b0 '
+b0 &
+b0 %
+b0 $
+b0 #
+b0 "
+b0 !
+$end
+#10
+b110 !
+b110 '
+1-
+b100010 &
+1K
+1)
+1,
+1A
+1D
+1G
+1J
+1M
+1P
+1+
+1I
+1U
+17
+b11 #
+b11 %
+b10 "
+b10 $
+#20
+b1111 !
+b1111 '
+1*
+0-
+1B
+1H
+0K
+b1010101 &
+1N
+1(
+0+
+1@
+1F
+0I
+1L
+1R
+0U
+1.
+14
+07
+1:
+b101 "
+b101 $
+#30
+b11110 !
+b11110 '
+0*
+0B
+1K
+b11110000 &
+1Q
+0)
+0,
+0A
+0D
+1+
+1C
+1I
+1O
+1U
+11
+17
+1=
+b10 #
+b10 %
+b1111 "
+b1111 $
+#40
+b11100001 !
+b11100001 '
+1*
+1-
+1B
+1E
+1T
+1W
+10
+13
+16
+19
+1<
+b1111111111111111 &
+1?
+1)
+1,
+1A
+1D
+1S
+1V
+1/
+12
+15
+18
+1;
+1>
+b1111 #
+b1111 %
+#50

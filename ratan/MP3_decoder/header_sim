@@ -1,0 +1,137 @@
+#! /usr/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x5c232970ccf0 .scope module, "mp3_header_parser_tb" "mp3_header_parser_tb" 2 2;
+ .timescale -9 -12;
+v0x5c232973aac0_0 .net "bitrate_index", 3 0, v0x5c232971c9c0_0;  1 drivers
+o0x7a81c1372558 .functor BUFZ 2, C4<zz>; HiZ drive
+v0x5c232973aba0_0 .net "channel_mode", 1 0, o0x7a81c1372558;  0 drivers
+v0x5c232973ac60_0 .net "copyright_bit", 0 0, v0x5c2329739ef0_0;  1 drivers
+v0x5c232973ad60_0 .net "emphasis", 1 0, v0x5c2329739f90_0;  1 drivers
+v0x5c232973ae30_0 .var "header", 31 0;
+v0x5c232973aed0_0 .net "layer", 1 0, v0x5c232973a1a0_0;  1 drivers
+o0x7a81c1372588 .functor BUFZ 2, C4<zz>; HiZ drive
+v0x5c232973afa0_0 .net "mode_extension", 1 0, o0x7a81c1372588;  0 drivers
+v0x5c232973b040_0 .net "mpeg_version", 1 0, v0x5c232973a360_0;  1 drivers
+o0x7a81c13725b8 .functor BUFZ 1, C4<z>; HiZ drive
+v0x5c232973b130_0 .net "original_bit", 0 0, o0x7a81c13725b8;  0 drivers
+v0x5c232973b1d0_0 .net "padding", 0 0, v0x5c232973a500_0;  1 drivers
+v0x5c232973b2a0_0 .net "private_bit", 0 0, v0x5c232973a5c0_0;  1 drivers
+v0x5c232973b370_0 .net "protection", 0 0, v0x5c232973a680_0;  1 drivers
+v0x5c232973b440_0 .net "sample_frequency_index", 1 0, v0x5c232973a740_0;  1 drivers
+v0x5c232973b510_0 .net "sync", 10 0, v0x5c232973a820_0;  1 drivers
+S_0x5c232971c660 .scope module, "DUT" "mp3_header_parser" 2 17, 3 2 0, S_0x5c232970ccf0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 32 "header";
+    .port_info 1 /OUTPUT 11 "sync";
+    .port_info 2 /OUTPUT 2 "mpeg_version";
+    .port_info 3 /OUTPUT 2 "layer";
+    .port_info 4 /OUTPUT 1 "protection";
+    .port_info 5 /OUTPUT 4 "bitrate_index";
+    .port_info 6 /OUTPUT 2 "sample_frequency_index";
+    .port_info 7 /OUTPUT 1 "padding";
+    .port_info 8 /OUTPUT 1 "private_bit";
+    .port_info 9 /OUTPUT 2 "channel_mode";
+    .port_info 10 /OUTPUT 2 "mode_extension";
+    .port_info 11 /OUTPUT 1 "copyright_bit";
+    .port_info 12 /OUTPUT 1 "original_bit";
+    .port_info 13 /OUTPUT 2 "emphasis";
+v0x5c232971c9c0_0 .var "bitrate_index", 3 0;
+v0x5c2329739e10_0 .var "channel_mode", 1 0;
+v0x5c2329739ef0_0 .var "copyright_bit", 0 0;
+v0x5c2329739f90_0 .var "emphasis", 1 0;
+v0x5c232973a070_0 .net "header", 31 0, v0x5c232973ae30_0;  1 drivers
+v0x5c232973a1a0_0 .var "layer", 1 0;
+v0x5c232973a280_0 .var "mode_extension", 1 0;
+v0x5c232973a360_0 .var "mpeg_version", 1 0;
+v0x5c232973a440_0 .var "original_bit", 0 0;
+v0x5c232973a500_0 .var "padding", 0 0;
+v0x5c232973a5c0_0 .var "private_bit", 0 0;
+v0x5c232973a680_0 .var "protection", 0 0;
+v0x5c232973a740_0 .var "sample_frequency_index", 1 0;
+v0x5c232973a820_0 .var "sync", 10 0;
+E_0x5c2329718af0 .event anyedge, v0x5c232973a070_0;
+    .scope S_0x5c232971c660;
+T_0 ;
+    %wait E_0x5c2329718af0;
+    %load/vec4 v0x5c232973a070_0;
+    %parti/s 11, 21, 6;
+    %store/vec4 v0x5c232973a820_0, 0, 11;
+    %load/vec4 v0x5c232973a070_0;
+    %parti/s 2, 19, 6;
+    %store/vec4 v0x5c232973a360_0, 0, 2;
+    %load/vec4 v0x5c232973a070_0;
+    %parti/s 2, 17, 6;
+    %store/vec4 v0x5c232973a1a0_0, 0, 2;
+    %load/vec4 v0x5c232973a070_0;
+    %parti/s 1, 16, 6;
+    %store/vec4 v0x5c232973a680_0, 0, 1;
+    %load/vec4 v0x5c232973a070_0;
+    %parti/s 4, 12, 5;
+    %store/vec4 v0x5c232971c9c0_0, 0, 4;
+    %load/vec4 v0x5c232973a070_0;
+    %parti/s 2, 10, 5;
+    %store/vec4 v0x5c232973a740_0, 0, 2;
+    %load/vec4 v0x5c232973a070_0;
+    %parti/s 1, 9, 5;
+    %store/vec4 v0x5c232973a500_0, 0, 1;
+    %load/vec4 v0x5c232973a070_0;
+    %parti/s 1, 8, 5;
+    %store/vec4 v0x5c232973a5c0_0, 0, 1;
+    %load/vec4 v0x5c232973a070_0;
+    %parti/s 2, 6, 4;
+    %store/vec4 v0x5c2329739e10_0, 0, 2;
+    %load/vec4 v0x5c232973a070_0;
+    %parti/s 2, 4, 4;
+    %store/vec4 v0x5c232973a280_0, 0, 2;
+    %load/vec4 v0x5c232973a070_0;
+    %parti/s 1, 3, 3;
+    %store/vec4 v0x5c2329739ef0_0, 0, 1;
+    %load/vec4 v0x5c232973a070_0;
+    %parti/s 1, 2, 3;
+    %store/vec4 v0x5c232973a440_0, 0, 1;
+    %load/vec4 v0x5c232973a070_0;
+    %parti/s 2, 0, 2;
+    %store/vec4 v0x5c2329739f90_0, 0, 2;
+    %jmp T_0;
+    .thread T_0, $push;
+    .scope S_0x5c232970ccf0;
+T_1 ;
+    %vpi_call 2 19 "$dumpfile", "header.vcd" {0 0 0};
+    %vpi_call 2 20 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x5c232970ccf0 {0 0 0};
+    %pushi/vec4 4294676480, 0, 32;
+    %store/vec4 v0x5c232973ae30_0, 0, 32;
+    %delay 10000, 0;
+    %vpi_call 2 24 "$display", "================================" {0 0 0};
+    %vpi_call 2 25 "$display", "      MP3 HEADER PARSER TEST" {0 0 0};
+    %vpi_call 2 26 "$display", "================================" {0 0 0};
+    %vpi_call 2 27 "$display", "Header=%b", v0x5c232973ae30_0 {0 0 0};
+    %vpi_call 2 28 "$display", "SYNC=%b", v0x5c232973b510_0 {0 0 0};
+    %vpi_call 2 29 "$display", "MPEG Version=%b", v0x5c232973b040_0 {0 0 0};
+    %vpi_call 2 30 "$display", "Layer=%b", v0x5c232973aed0_0 {0 0 0};
+    %vpi_call 2 31 "$display", "Protection=%b", v0x5c232973b370_0 {0 0 0};
+    %vpi_call 2 32 "$display", "Bitrate index=%b", v0x5c232973aac0_0 {0 0 0};
+    %vpi_call 2 33 "$display", "Sample Frequency Index=%b", v0x5c232973b440_0 {0 0 0};
+    %vpi_call 2 34 "$display", "Padding=%b", v0x5c232973b1d0_0 {0 0 0};
+    %vpi_call 2 35 "$display", "Private Bit=%b", v0x5c232973b2a0_0 {0 0 0};
+    %vpi_call 2 36 "$display", "Channel Mode=%b", v0x5c232973aba0_0 {0 0 0};
+    %vpi_call 2 37 "$display", "Mode Extension=%b", v0x5c232973afa0_0 {0 0 0};
+    %vpi_call 2 38 "$display", "Copyright=%b", v0x5c232973ac60_0 {0 0 0};
+    %vpi_call 2 39 "$display", "Original=%b", v0x5c232973b130_0 {0 0 0};
+    %vpi_call 2 40 "$display", "Emphasis=%b", v0x5c232973ad60_0 {0 0 0};
+    %vpi_call 2 41 "$display", "================================" {0 0 0};
+    %vpi_call 2 42 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "mp3_header_parser_tb.v";
+    "mp3_header_parser.v";

@@ -1,0 +1,55 @@
+`timescale 1ns/1ps
+module imdct_tb;
+reg clk;
+reg reset;
+reg data_valid;
+reg signed [15:0] x_in;
+reg signed [15:0] y_in;
+wire signed [15:0] pcm_out;
+wire output_valid;
+imdct uut (.clk(clk), .reset(reset), .data_valid(data_valid), .x_in(x_in), .y_in(y_in), .pcm_out(pcm_out), .output_valid(output_valid));
+always #5 clk=~clk;
+initial begin
+	clk=0;
+	reset=1;
+	data_valid=0;
+	x_in=0;
+	y_in=0;
+	$dumpfile("imdct.vcd");
+	$dumpvars(0,imdct_tb);
+	#10;
+	reset=0;
+	#10;
+	data_valid=1;
+	x_in=4;
+	y_in=9;
+	#10;
+	data_valid=0;
+	#10;
+        data_valid=1;
+        x_in=-4;
+        y_in=9;
+        #10;
+        data_valid=0;
+	#10;
+        data_valid=1;
+        x_in=4;
+        y_in=-9;
+        #10;
+        data_valid=0;
+	#10;
+        data_valid=1;
+        x_in=-4;
+        y_in=-9;
+        #10;
+        data_valid=0;
+	#20;
+	$display("=========================");
+	$display("IMDCT TEST");
+	$display("PCM_OUT=%d", pcm_out);
+	$display("VALID=%b", output_valid);
+	$display("========================");
+	#20;
+	$finish;
+end
+endmodule

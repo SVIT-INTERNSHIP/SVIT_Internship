@@ -1,0 +1,76 @@
+$date
+	Fri Sep  4 06:49:31 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module address_matcher_tb $end
+$var wire 1 ! ack_bit $end
+$var reg 1 " check_addr_flag $end
+$var reg 1 # clk $end
+$var reg 7 $ received_addr [6:0] $end
+$var reg 1 % reset $end
+$scope module uut $end
+$var wire 1 ! ack_bit $end
+$var wire 1 " check_addr_flag $end
+$var wire 1 # clk $end
+$var wire 7 & received_addr [6:0] $end
+$var wire 1 % reset $end
+$var wire 1 ' address_ack $end
+$scope module u_address_matcher $end
+$var wire 1 " check_addr_flag $end
+$var wire 1 # clk $end
+$var wire 7 ( received_addr [6:0] $end
+$var wire 1 % reset $end
+$var reg 1 ' ack_bit $end
+$var reg 7 ) my_slave_address [6:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b1010101 )
+b0 (
+0'
+b0 &
+1%
+b0 $
+0#
+1"
+0!
+$end
+#5
+1#
+#10
+0#
+b1010101 $
+b1010101 &
+b1010101 (
+0%
+#15
+1!
+1'
+1#
+#20
+0#
+b1111111 $
+b1111111 &
+b1111111 (
+#25
+0!
+0'
+1#
+#30
+0#
+0"
+#35
+1#
+#40
+0#
